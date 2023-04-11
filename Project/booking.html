@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="..//Project/booking.css">
+</head>
+<body>
+    <div class="movie-container">
+        <label>Pick a movie: </label>
+        <select id="movie">
+          <option value="250">John Wick (Rs. 250)</option>
+          <option value="200">Agilan(Rs. 200)</option>
+          <option value="150">Dada (Rs. 150)</option>
+          <option value="180">Pathaan (Rs. 180)</option>
+          <option value="200">Avatar(Rs. 100)</option>
+          <option value="100">Shazam (Rs. 100)</option>
+          <option value="200">Demon Slayer (Rs. 200)</option>
+          <option value="150">Vikram (Rs. 150)</option>
+          <option value="100">Ayothi(Rs. 100)</option>
+          <option value="250">Fast X(Rs. 250)</option>
+        </select>
+        
+        <ul class="showcase">
+          <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+          </li>
+          <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+          </li>
+          <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+          </li>    
+        </ul>
+        
+        <div class="container">
+          <div class="screen"></div>
+          
+          <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+            </div>
+            <div class="row">
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat occupied"></div>
+              <div class="seat"></div>
+            </div>
+            <br>
+          <button id="button" onclick="buttonchange()">book now</button>
+        </div>
+      </div>
+      
+      
+</body>
+<script >
+  function buttonchange(){
+    alert("Your Tickets Sucessfully Booked!");
+    window.open("..//Project/BookMymovies.html");
+}
+    
+</script>
+</html>
+
+
+
+
+

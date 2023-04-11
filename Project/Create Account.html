@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="..//Project/create Account.css">
+    
+</head>
+<body>
+    <div class="full">
+        
+    <div class="empty">
+        <p class="para3">book <span>My</span> movies</p> 
+        <p class="para4">Endless Entertainment Anytime.Anywhere!</p>
+        <p class="para5">Let's make this easy for you</p>  
+    </div>
+    <div class="form">
+        <div class="leftform">
+       
+        <form name="myForm" onsubmit="check()" action="" class="log">
+            <h2 class="headcreate">Create your account</h2>
+            <label for="fristname">Name</label><br>
+            <input type="text" id="fristname" placeholder="Frist name">
+            <input type="text" id="secondname" placeholder="Second name"><br>
+            <label for="email">Your email address</label><br>  
+            <input type="email" id="email" ><br>
+            <label for="password">Password</label><br>
+            <input type="password"  id="password"><br>
+            <label for="confrim">Confirm password</label><br>
+            <input type="password" id="confrim">    <br>    
+            <input type="checkbox" id="remember" name="remember" value="Remember me">
+  <label for="remember">Remember me</label><br>
+  <button type="submit" >Create account</button>
+  <p class="para1">Already have an account?<a href="">Sign In</a></p>
+  <hr>
+  <p class="para2">By clicking Sign Up you agree to the <a href="">Terms</a>& <a href="">Privacy Policy</a></p>
+        </form>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    function check(){
+        let name=document.getElementById("fristname").value;
+        let sname=document.myForm.secondname.value;
+        let email=document.myForm.email.value;
+        let password = document.getElementById("password").value;
+        let confrim = document.getElementById("confrim").value;
+
+        
+        if(name ==" " || name ==""){
+            alert("Please enter Frist name");
+        }
+        else if(name.length > 10){
+        }
+        else if(sname ==" " || sname ==""){
+            alert("Please enter second name");
+        }
+        else if (email==" " || email==""){
+            alert("Please enter Email");
+        }
+        else if (password==" " || password==""){
+            alert("Please enter Password");
+        }
+        else if (confrim==" " || confrim==""){
+            alert("Please enter Cornfirm Password");
+        }
+        else if (password.length < 6 || password.length >20){
+            alert("Your password must be between 6 to 20 characters");
+        }
+        else if(password !==" " || password !=="" || confrim !==" " || confrim !==""){
+            if(password==confrim){
+                alert("Your account sucessfully created");
+                window.open("..//Project/BookMymovies.html");
+            }
+            else{
+                alert("New password does not match with confirm password try again ")
+            }
+        }
+        else{
+            alert("Valid")
+        }
+    }
+   
+</script>
+</html>

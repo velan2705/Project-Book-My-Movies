@@ -1,0 +1,50 @@
+
+.movieheadz{
+    font-size: 36px;
+}
+.recommendz {
+
+    margin-left: 50px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 5px;
+      }
+      .container1 img{
+        border-radius: 10px;
+        height: 350px;
+      }
+      
+
+      
+      .imagez{
+        width: 100%;
+        margin-bottom: 10%;
+      }
+     .recommendz img{
+      height: 30vh;
+      width: 18vw;
+      border-radius: 10px;
+      height: 350px;
+     }
+     .imagez tr:nth-child(2){
+      display:none;
+     }
+     .imagez tr:nth-child(3){
+      color: #222222;
+      font-size: 18px;
+      line-height: 23.94px;
+      font-weight: 500;
+        
+     }
+    .imagez tr:nth-child(4){
+    color: #666666;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    } 
+    /* footer{
+      margin-left: 50px;
+      width: 50%;
+      border-radius: 10px;
+    } */
